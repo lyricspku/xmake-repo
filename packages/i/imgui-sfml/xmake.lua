@@ -46,7 +46,7 @@ package("imgui-sfml")
                 add_headerfiles("*.h")
                 add_includedirs(".")
                 add_packages("imgui", "sfml", "opengl")
-                set_languages("c++11")
+                set_languages("c++17")
                 add_defines("IMGUI_USER_CONFIG=\"imconfig-SFML.h\"")
                 if is_plat("windows", "mingw") then
                     add_syslinks("imm32")
